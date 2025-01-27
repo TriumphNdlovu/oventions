@@ -3,18 +3,17 @@
 @tailwind utilities;
 
 /* Light Mode - default */
-:root {
-  --background: #ffffff;  /* White background for light mode */
-  --foreground: #1a202c;  /* Dark text color for light mode */
-}
-
-/* Dark Mode */
-.dark {
-  --background: #1a202c;  /* Dark background for dark mode */
-  --foreground: #f7fafc;  /* Light text color for dark mode */
-}
-
-/* Optional: Smooth transition between modes */
+/* globals.css */
 html {
+  background-color: theme('colors.background.light');
+  color: theme('colors.foreground.light');
   transition: background-color 0.3s, color 0.3s;
 }
+
+html.dark {
+  background-color: theme('colors.background.dark');
+  color: theme('colors.foreground.dark');
+  transition: background-color 0.3s, color 0.3s;
+}
+
+

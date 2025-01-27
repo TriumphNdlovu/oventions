@@ -10,11 +10,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: {
+          light: '#ffffff', // Light mode background
+          dark: '#1a202c', // Dark mode background
+        },
+        foreground: {
+          light: '#1a202c', // Light mode text
+          dark: '#ffffff', // Dark mode text
+        },
       },
     },
   },
   plugins: [],
 } satisfies Config;
-

@@ -6,6 +6,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: 'class', // Use the 'class' strategy for toggling dark mode
   theme: {
     extend: {
       colors: {
@@ -16,3 +17,4 @@ export default {
   },
   plugins: [],
 } satisfies Config;
+

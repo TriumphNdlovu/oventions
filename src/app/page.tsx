@@ -21,6 +21,8 @@ export default function Home() {
     localStorage.setItem("theme", darkMode ? "dark" : "light");
   }, [darkMode]);
 
+  
+
   return (
     <>
       <Head>
@@ -34,20 +36,21 @@ export default function Home() {
       >
         
         {/* Hero Section */}
-        <section className="w-full bg-gradient-to-r from-blue-500 to-teal-500 text-white py-20 px-5 text-center rounded-b-3xl relative overflow-hidden">
-          <div className="absolute inset-0 bg-opacity-40 bg-black"></div>
-          <div className="relative">
+        <section className="w-full bg-gradient-to-r from-blue-400 to-teal-400 dark:from-gray-800 dark:to-slate-900 text-white px-5 text-center rounded-b-3xl relative overflow-hidden h-screen flex flex-col justify-center items-center ">
+          <div className="absolute inset-0 bg-opacity-40 bg-black dark:bg-opacity-50"></div>
+          <div className="relative animate-fade-in-down">
             <h1 className="text-4xl md:text-6xl font-extrabold mb-4 animate-fade-in-down pt-20">
               Welcome to Oventions
             </h1>
             <p className="text-lg md:text-2xl max-w-2xl mx-auto mb-6 animate-fade-in-up">
               We help businesses grow with innovative solutions and cutting-edge technology.
             </p>
-            <Button className="bg-white text-blue-600 hover:bg-blue-100 rounded-lg shadow-lg animate-bounce">
+            <Button className="bg-white text-blue-600 hover:bg-blue-100 dark:bg-teal-600 dark:text-white dark:hover:bg-teal-700 rounded-lg shadow-lg animate-pulse">
               Get Started
             </Button>
           </div>
         </section>
+
 
         {/* About Section */}
         <section
@@ -55,6 +58,9 @@ export default function Home() {
           className="w-full py-16 px-5 text-center max-w-4xl bg-white dark:bg-gray-800 shadow-lg rounded-lg"
         >
           <h2 className="text-3xl font-bold text-blue-600 dark:text-teal-400 mb-4">About Us</h2>
+          <div className="flex justify-center mb-6 animate__animated animate__fadeIn">
+            <img src="/images/about-image.jpg" alt="About Us" className="rounded-lg shadow-lg w-64 h-64 object-cover" />
+          </div>
           <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
             Our mission is to deliver high-quality services that drive success and innovation
             for our clients. Learn more about our team and what we do.
@@ -68,7 +74,7 @@ export default function Home() {
         <section id="services" className="w-full bg-gray-100 dark:bg-gray-900 py-16 px-5 text-center">
           <h2 className="text-3xl font-bold text-blue-600 dark:text-teal-400 mb-4">Our Services</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md">
+            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md hover:scale-105 transition-all duration-300">
               <FaLightbulb className="text-blue-600 dark:text-teal-400 text-4xl mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-3">Innovative Solutions</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -78,7 +84,7 @@ export default function Home() {
                 Learn More
               </Button>
             </div>
-            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md">
+            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md hover:scale-105 transition-all duration-300">
               <FaCog className="text-blue-600 dark:text-teal-400 text-4xl mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-3">Technology Integration</h3>
               <p className="text-gray-600 dark:text-gray-300">
@@ -88,7 +94,7 @@ export default function Home() {
                 Learn More
               </Button>
             </div>
-            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md">
+            <div className="p-6 bg-white dark:bg-gray-800 shadow-lg rounded-lg backdrop-blur-md hover:scale-105 transition-all duration-300">
               <FaRocket className="text-blue-600 dark:text-teal-400 text-4xl mb-4 mx-auto" />
               <h3 className="text-xl font-semibold mb-3">Scalable Growth</h3>
               <p className="text-gray-600 dark:text-gray-300">

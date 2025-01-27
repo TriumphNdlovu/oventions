@@ -10,11 +10,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className="bg-white mx-auto mt-2 text-gray-900 shadow-xl backdrop-blur-lg bg-opacity-30 fixed w-[95%] z-10 rounded-3xl border border-gray-300 dark:bg-gray-800 dark:bg-opacity-40 dark:text-gray-100 dark:border-gray-600 dark:backdrop-blur-md">
+   <nav className="bg-white mx-auto mt-4 text-gray-900 shadow-xl backdrop-blur-lg bg-opacity-30 fixed w-[95%] z-10 rounded-3xl border border-gray-300 dark:bg-gray-800 dark:bg-opacity-40 dark:text-gray-100 dark:border-gray-600 dark:backdrop-blur-md">
   <div className="container mx-auto px-6 py-4 flex justify-between items-center">
     <Link
       href="/"
-      className="text-2xl font-extrabold text-blue-500 hover:text-blue-600 transition-all duration-300 ease-in-out"
+      className="text-2xl font-extrabold text-white hover:text-teal-600 transition-all duration-300 ease-in-out"
     >
       {"<Oventions/>"}
     </Link>

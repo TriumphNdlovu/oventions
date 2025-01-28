@@ -10,11 +10,12 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-   <nav className="bg-white mx-auto mt-4 text-gray-900 shadow-xl backdrop-blur-lg bg-opacity-30 fixed w-[95%] z-10 rounded-3xl border border-gray-300 dark:bg-gray-800 dark:bg-opacity-40 dark:text-gray-100 dark:border-gray-600 dark:backdrop-blur-md">
+   <nav className="bg-black mx-auto mt-4 font-bold shadow-xl backdrop-blur-lg bg-opacity-30 fixed w-[95%] z-50 rounded-3xl 
+    dark:bg-black dark:bg-opacity-80 text-white dark:border-gray-600 dark:backdrop-blur-md">
   <div className="container mx-auto px-6 py-4 flex justify-between items-center">
     <Link
       href="/"
-      className="text-2xl font-extrabold text-white hover:text-teal-600 transition-all duration-300 ease-in-out"
+      className="text-2xl font-extrabold text-white transition-all duration-300 ease-in-out"
     >
       {"<Oventions/>"}
     </Link>
@@ -22,25 +23,25 @@ const Navbar = () => {
     <div className="hidden md:flex space-x-6 items-center">
       <Link
         href="#home"
-        className="text-gray-800 hover:text-teal-500 transition-all duration-300 ease-in-out dark:text-gray-200"
+        className=" hover:underline  transition-all duration-300 ease-in-out dark:text-gray-200"
       >
         Home
       </Link>
       <Link
         href="#about"
-        className="text-gray-800 hover:text-teal-500 transition-all duration-300 ease-in-out dark:text-gray-200"
+        className=" hover:underline transition-all duration-300 ease-in-out dark:text-gray-200"
       >
         About
       </Link>
       <Link
         href="#services"
-        className="text-gray-800 hover:text-teal-500 transition-all duration-300 ease-in-out dark:text-gray-200"
+        className=" hover:underline transition-all duration-300 ease-in-out dark:text-gray-200"
       >
         Services
       </Link>
       <Link
         href="#contact"
-        className="text-gray-800 hover:text-teal-500 transition-all duration-300 ease-in-out dark:text-gray-200"
+        className=" hover:underline transition-all duration-300 ease-in-out dark:text-gray-200"
       >
         Contact
       </Link>

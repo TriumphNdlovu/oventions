@@ -23,6 +23,14 @@ export default function ContactForm() {
   };
 
   return (
+    <section
+          id="contact"
+          className="w-full py-16 px-5 text-center max-w-4xl bg-white dark:bg-gray-800 shadow-lg rounded-lg"
+        >
+          <h2 className="text-3xl font-bold text-blue-600 dark:text-teal-400 mb-4">Contact Us</h2>
+          <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+            Get in touch with us to learn more about our services or start a project.
+          </p>
     <form
       onSubmit={handleSubmit}
       className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto"
@@ -58,5 +66,7 @@ export default function ContactForm() {
         Send Message
       </Button>
     </form>
+    </section>
+    
   );
 }
